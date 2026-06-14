@@ -886,12 +886,7 @@ h2 em {
   height: 14px;
 }
 
-.skill-card:nth-child(4),
-.skill-card:nth-child(5) {
-  grid-column: span 1;
-}
-
-.skill-card:nth-child(5) {
+.skill-card:last-child {
   grid-column: span 2;
 }
 
@@ -1944,6 +1939,10 @@ h2 em {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .skill-card:last-child {
+    grid-column: span 2;
+  }
+
   .ai-literacy-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -2212,7 +2211,7 @@ h2 em {
     grid-template-columns: 1fr;
   }
 
-  .skill-card:nth-child(5) {
+  .skill-card:last-child {
     grid-column: auto;
   }
 
